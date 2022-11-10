@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { genderAPI, nationalityAPI, randomAgeAPI } from "../API/apiList";
 import { getData } from "../API/getData";
-import GetNameForm from "./getNameForm";
-import ShowNameData from "./showNameData";
+import GetNameForm from "./GetNameForm";
+import ShowNameData from "./ShowNameData";
 
 const UserNameData = () => {
 	const [gender, setGender] = useState(null);
@@ -26,7 +26,7 @@ const UserNameData = () => {
 
 	const setUserName = (value) => setName(value);
 
-	const resetInputValues = () => {
+	const resetOutputValues = () => {
 		setAge(null);
 		setNationality(null);
 		setGender(null);
@@ -34,7 +34,7 @@ const UserNameData = () => {
 
 	return (
 		<div>
-			<GetNameForm setName={setUserName} resetInputValues={resetInputValues} />
+			<GetNameForm setName={setUserName} resetOutputValues={resetOutputValues} />
 			<ShowNameData nameData={gender} />
 			<ShowNameData nameData={age} />
 			<ShowNameData nameData={nationality} />

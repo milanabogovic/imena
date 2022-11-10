@@ -1,7 +1,7 @@
-const GetNameForm = ({ setName, resetInputValues }) => {
+const GetNameForm = ({ setName, resetOutputValues }) => {
 	return (
 		<form
-			onChange={() => resetInputValues()}
+			onChange={() => resetOutputValues()}
 			onSubmit={(e) => {
 				e.preventDefault();
 				setName(e.target.children[0].value);
