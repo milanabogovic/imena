@@ -1,11 +1,11 @@
-import FormInputName from "./FormInputName";
+import UserNameData from "./Components/UserNameData";
 
 function App() {
-  return (
-    <div>
-      <FormInputName />
-    </div>
-  );
+	return (
+		<div>
+			<UserNameData />
+		</div>
+	);
 }
 
 export default App;
